@@ -1,17 +1,25 @@
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <script>
-    /*
-    PROBLEMA: ARRAY EM ORDEM DECRESCENTE
-    Peça para um usuário inserir três números. Crie um array com os três números, colocando-os em ordem decrescente. Para ordenar, NÃO use o método reverse();
-    Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
-    */
 
     //ENTRADA
 
+    let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
+    let menino = [];
+    let menina = [];
 
-    //PROCESSAMENTo
-    pares.reverse((a, b) => b - a);
+    //PROCESSAMENTO
 
+    for (let nome of listaDeNomes) {
+        const genero = prompt(`${nome} É M(masculino) ou F(feminino?)`);
+        if (genero == "M") {
+            menino.push(nome);
+        } else if (genero == "F") {
+            menina.push(nome);
+        }
+    }
+    
     //SAÍDA
+
+    document.write(`Meninos: ${menino.join(" - ")} <br> Meninas: ${menina.join(" - ")}`);
 
 </script>

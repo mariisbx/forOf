@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+
+    //ENTRADA
+
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let par = [];
+    let impar = [];
+
+    //PROCESSAMENTO
+
+    for (let numero of listaDeNumeros) {
+        if (numero % 2 == 0) {
+            par.push(numero);
+        } else {
+            impar.push(numero);
+        }
+    }
+    
+
+    //SAÍDA
+
+    document.write(`Ímpares crescentes: ${impar.sort((a, b) => a - b)} <br> Ímpares decrescentes: ${impar.sort((a, b) => b - a)} <br> Pares crescentes: ${par.sort((a, b) => a - b)} <br> Pares decrescentes: ${par.sort((a, b) => b - a)}`);
+
+</script>
